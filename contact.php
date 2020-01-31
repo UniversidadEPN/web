@@ -1,7 +1,7 @@
 <?php
 $errors = '';
 /* your email here */
-$myemail = 'khaitawng2014@gmail.com';
+$myemail = 'rosero.julio.d@gmail.com';
 if(empty($_POST['name']) ||
    empty($_POST['email']) ||
    empty($_POST['phone']) ||
@@ -23,7 +23,7 @@ if( empty($errors) ) {
 	$to = $myemail;
 	$email_subject = "Contact form submission: $name";
 	$email_body = "You have received a new massage. ".
-	" Here are the address:\n Name: $name \n Email: $email_address \n Phone: $phone \n Message: $message";
+	" Here are the address:\n Nombre: $name \n Email: $email_address \n Teléfono: $phone \n Mensaje: $message";
 
 	$headers = "From: $myemail\n";
 	$headers .= "Reply-To: $email_address";
@@ -50,7 +50,7 @@ h1 {
     letter-spacing: 2px;
     line-height: 42px;
     margin-bottom: 20px;
-    font-weight: bold;	
+    font-weight: bold;
 }
 
 label,a,body {
@@ -61,10 +61,10 @@ label,a,body {
 	padding: 100px 0;
 	text-align: center;
 }
-</style>	
+</style>
 
 <!-- a helper script for vaidating the form-->
-</head>	
+</head>
 <body>
 
 <div class="respond">
@@ -74,9 +74,3 @@ label,a,body {
 
 </body>
 </html>
-
-
-
-
-
-
